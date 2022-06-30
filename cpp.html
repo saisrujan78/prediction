@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CP</title>
+    <style>
+      #main{
+    background-color: #E8F9FD;
+    padding: 5px 1em 10px 2em;
+    margin: 2em 2em 0 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 10px 10px 5px lightblue;
+  }
+  #intro{
+    text-align: center;
+    padding: 10px 1em 50px 2em;
+    color: #A6A9B6;
+  }
+  h1,h3{
+    font-family: 'Playfair Display', serif;
+  }
+  #image{
+    background-color: #f7f7f7;
+  }
+  
+  .head{
+    color: #2155CD;
+    box-shadow: 2px 2px 2px lightblue;
+  }
+  
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar head" style="background-color: #ffffff;">
+  <!-- Navbar content --><h1>CP</h1>
+
+   </nav>
+   <section id="image">
+   <section id="intro">
+     <p>Over the years, we have gained specialized experience on finding the right universities for your profile. We often see students squander thousands of dollars on their application process. We still provide that specialized experience where we go a lot more in-depth on the universities you pick for your applications as a paid service. However, CP offers you some of that specialized knowledge through an algorithm we spent months making and years perfecting. The best part? We give it away for free. All we ask is that you share it with people who would benefit from the tool!
+
+</p>
+   </section>
+   <section id="main">
+
+   <form action="/predict" id="formm" method="post">
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">GRE score</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control-md" id="inputEmail3" name="gre">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">TOEFL score</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control-md" id="inputPassword3" name="toefl">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">CGPA</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control-md" id="inputEmail3" name="cgpa">
+    </div>
+  </div>
+  <br>
+  <h3>STRENGTH</h3>
+  <br>
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Statement of Purpose</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control-md" id="inputEmail3" placeholder="out of 5" name="sop">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Letter of Recommendation</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control-md" id="inputEmail3" placeholder="out of 5" name="lor">
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">University rating</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control-md" id="inputEmail3" placeholder="out of 5" name="ur">
+    </div>
+  </div>
+  
+   <br>
+   <br>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <br>
+  <br>
+  <h3>{{ prediction_text }}</h3>
+</form>
+</section>
+</section>
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="cpp.html" class="nav-link px-2 text-muted">Home</a></li>
+
+    </ul>
+    <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+  </footer>
+</div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
